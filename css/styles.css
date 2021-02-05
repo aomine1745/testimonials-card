@@ -1,18 +1,22 @@
-body{
+* {
 	margin: 0;
 	padding: 0;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 100%;
 	font-family: sans-serif;
 	background-color: #262626;
 }
-.testimonials{
-	margin: 75px auto 100px;
+.testimonials {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	grid-gap: 20px;
 }
-.testimonials .card{
+.testimonials .card {
 	position: relative;
 	width: 350px;
 	margin: 0 auto;
@@ -23,7 +27,7 @@ body{
 	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
 }
-.testimonials .card .layer{
+.testimonials .card .layer {
 	position: absolute;
 	top: calc(100% - 2px);
 	left: 0;
@@ -33,19 +37,19 @@ body{
 	z-index: 1;
 	transition: .5s;
 }
-.testimonials .card:hover .layer{
+.testimonials .card:hover .layer {
 	top: 0;
 }
-.testimonials .card .content{
+.testimonials .card .content {
 	position: relative;
 	z-index: 2;
 }
-.testimonials .card .content p{
+.testimonials .card .content p {
 	font-size: 18px;
 	line-height: 24px;
 	color: #fff;
 }
-.testimonials .card .content img{
+.testimonials .card .content img {
 	width: 100px;
 	height: 100px;
 	margin: 0 auto;
@@ -54,15 +58,15 @@ body{
 	border: 4px solid #fff;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
-.testimonials .card .content .details h2{
+.testimonials .card .content .details h2 {
 	font-size: 18px;
 	color: #fff;
 }
-.testimonials .card .content .details h2 span{
+.testimonials .card .content .details h2 span {
 	color: #03a9f4;
 	font-size: 14px;
 	transition: .5s;
 }
-.testimonials .card:hover .content .details h2 span{
+.testimonials .card:hover .content .details h2 span {
 	color: #fff;
 }
